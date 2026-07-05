@@ -15,6 +15,21 @@
 </head>
 <body>
 
+    <!-- ===================== PRELOADER ===================== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <h2 class="preloader-word" aria-label="BlumBox">
+                <span>B</span><span>l</span><span>u</span><span>m</span><span>b</span><span>o</span><span>x</span>
+            </h2>
+            <div class="preloader-bar"><span></span></div>
+            <p class="preloader-text">Loading</p>
+        </div>
+    </div>
+
+    <!-- ===================== CUSTOM CURSOR ===================== -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
     <!-- ===================== NAVBAR ===================== -->
     <header class="navbar" id="navbar">
         <div class="container nav-inner">
@@ -23,14 +38,14 @@
             </a>
 
             <nav class="nav-links" id="navLinks">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#why" class="nav-link">Why BlumBox</a>
+                <a href="#why" class="nav-link active">Why BlumBox</a>
                 <a href="#services" class="nav-link">Services</a>
+                <a href="#enquiry" class="nav-link">Book &amp; Enquire</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="https://wa.me/60167296636?text=Hi%20BlumBox%2C%20I'd%20like%20to%20get%20a%20free%20quote." class="btn btn-primary nav-cta nav-cta-mobile" target="_blank" rel="noopener">Get a Quote</a>
+                <a href="https://wa.me/60167653393?text=Hi%20BlumBox%2C%20I'd%20like%20to%20get%20a%20free%20quote." class="btn btn-primary nav-cta nav-cta-mobile" target="_blank" rel="noopener">Get a Quote</a>
             </nav>
 
-            <a href="https://wa.me/60167296636?text=Hi%20BlumBox%2C%20I'd%20like%20to%20get%20a%20free%20quote." class="btn btn-primary nav-cta" target="_blank" rel="noopener">Get a Quote</a>
+            <a href="https://wa.me/60167653393?text=Hi%20BlumBox%2C%20I'd%20like%20to%20get%20a%20free%20quote." class="btn btn-primary nav-cta" target="_blank" rel="noopener">Get a Quote</a>
 
             <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -41,14 +56,20 @@
     <!-- ===================== HERO ===================== -->
     <section class="hero" id="home">
         <div class="hero-slider" id="heroSlider">
-            <div class="hero-slide is-active" style="background-image:url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1920&q=80')"></div>
-            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=80')"></div>
-            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1920&q=80')"></div>
+            <!-- 1. Event Management — tables, chairs, stage, event in progress -->
+            <div class="hero-slide is-active" style="background-image:url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1920&q=80')"></div>
+            <!-- 2. Event Management — stage / event area in progress -->
             <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1920&q=80')"></div>
+            <!-- 3. Event Planning — people discussing / planning an event -->
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1920&q=80')"></div>
+            <!-- 4. Photography & Videography — someone shooting with a camera -->
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=1920&q=80')"></div>
+            <!-- 5. KEPT (original 5th) -->
             <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=1920&q=80')"></div>
+            <!-- 6. KEPT (original 6th) -->
             <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1920&q=80')"></div>
-            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=1920&q=80')"></div>
-            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=1920&q=80')"></div>
+            <!-- 7. Graphic Design — designer working on a design -->
+            <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1920&q=80')"></div>
         </div>
         <div class="hero-overlay"></div>
 
@@ -57,7 +78,7 @@
             <h1 class="hero-title reveal">Creative Solutions.<br><em>Exceptional Events.</em></h1>
             <p class="hero-sub reveal">Graphic Design &nbsp;|&nbsp; Event Planning &nbsp;|&nbsp; Event Management &nbsp;|&nbsp; MC Services &nbsp;|&nbsp; Photography &amp; Videography &nbsp;|&nbsp; Branding &amp; Marketing</p>
             <div class="hero-actions reveal">
-                <a href="https://wa.me/60167296636?text=Hi%20BlumBox%2C%20I'd%20like%20to%20get%20a%20free%20quote." class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get a Free Quote</a>
+                <a href="https://wa.me/60167653393?text=Hi%20BlumBox%2C%20I'd%20like%20to%20get%20a%20free%20quote." class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get a Free Quote</a>
             </div>
         </div>
 
@@ -113,13 +134,15 @@
                 <p class="section-lead">From creative design and branding to complete event planning and management, BlumBox brings together the expertise businesses need to turn ideas into successful experiences — every step of the way.</p>
             </div>
 
-            <div class="services-grid">
-                <article class="service-card reveal" style="--img:url('https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=900&q=80')">
-                    <div class="service-media"></div>
-                    <div class="service-body">
+            <div class="services-zigzag">
+                <!-- 01 Graphic Design — CHANGED image (designer at work) -->
+                <article class="zz-row reveal">
+                    <div class="zz-media" style="--img:url('https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1000&q=80')"><span class="zz-num">01</span></div>
+                    <div class="zz-content">
+                        <span class="zz-tag">Service</span>
                         <h3>Graphic Design</h3>
                         <p>Creative visuals that help your brand look professional, consistent, and memorable.</p>
-                        <ul>
+                        <ul class="zz-list">
                             <li>Logo &amp; brand identity</li>
                             <li>Flyers, posters &amp; banners</li>
                             <li>Social media creatives</li>
@@ -128,12 +151,14 @@
                     </div>
                 </article>
 
-                <article class="service-card reveal" style="--img:url('https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=900&q=80')">
-                    <div class="service-media"></div>
-                    <div class="service-body">
+                <!-- 02 MC Services — image KEPT as requested -->
+                <article class="zz-row reveal">
+                    <div class="zz-media" style="--img:url('https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1000&q=80')"><span class="zz-num">02</span></div>
+                    <div class="zz-content">
+                        <span class="zz-tag">Service</span>
                         <h3>MC Services</h3>
                         <p>Professional emcees who keep your event engaging, organized, and enjoyable from start to finish.</p>
-                        <ul>
+                        <ul class="zz-list">
                             <li>Corporate functions &amp; conferences</li>
                             <li>Award nights &amp; annual dinners</li>
                             <li>Product launches &amp; openings</li>
@@ -142,12 +167,14 @@
                     </div>
                 </article>
 
-                <article class="service-card reveal" style="--img:url('https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=900&q=80')">
-                    <div class="service-media"></div>
-                    <div class="service-body">
+                <!-- 03 Event Planning — CHANGED image (people planning an event) -->
+                <article class="zz-row reveal">
+                    <div class="zz-media" style="--img:url('https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?auto=format&fit=crop&w=1000&q=80')"><span class="zz-num">03</span></div>
+                    <div class="zz-content">
+                        <span class="zz-tag">Service</span>
                         <h3>Event Planning</h3>
                         <p>Every successful event begins with thoughtful planning that turns ideas into memorable experiences.</p>
-                        <ul>
+                        <ul class="zz-list">
                             <li>Corporate events &amp; conferences</li>
                             <li>Product launches &amp; grand openings</li>
                             <li>Annual dinners &amp; award ceremonies</li>
@@ -156,12 +183,14 @@
                     </div>
                 </article>
 
-                <article class="service-card reveal" style="--img:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80')">
-                    <div class="service-media"></div>
-                    <div class="service-body">
+                <!-- 04 Event Management — CHANGED image (tables, stage, event area) -->
+                <article class="zz-row reveal">
+                    <div class="zz-media" style="--img:url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=80')"><span class="zz-num">04</span></div>
+                    <div class="zz-content">
+                        <span class="zz-tag">Service</span>
                         <h3>Event Management</h3>
                         <p>From setup to execution, our team manages every detail so your event runs smoothly throughout.</p>
-                        <ul>
+                        <ul class="zz-list">
                             <li>On-site &amp; vendor coordination</li>
                             <li>Registration &amp; guest management</li>
                             <li>Timeline &amp; stage management</li>
@@ -170,12 +199,14 @@
                     </div>
                 </article>
 
-                <article class="service-card reveal" style="--img:url('https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=900&q=80')">
-                    <div class="service-media"></div>
-                    <div class="service-body">
+                <!-- 05 Photography & Videography — CHANGED image (shooting with camera) -->
+                <article class="zz-row reveal">
+                    <div class="zz-media" style="--img:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=80')"><span class="zz-num">05</span></div>
+                    <div class="zz-content">
+                        <span class="zz-tag">Service</span>
                         <h3>Photography &amp; Videography</h3>
                         <p>Capture every important moment with professional photography and videography tailored to your event.</p>
-                        <ul>
+                        <ul class="zz-list">
                             <li>Event &amp; corporate photography</li>
                             <li>Highlight &amp; promotional videos</li>
                             <li>Product &amp; team photography</li>
@@ -184,12 +215,14 @@
                     </div>
                 </article>
 
-                <article class="service-card reveal" style="--img:url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80')">
-                    <div class="service-media"></div>
-                    <div class="service-body">
+                <!-- 06 AI Photography & Videography — CHANGED image -->
+                <article class="zz-row reveal">
+                    <div class="zz-media" style="--img:url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1000&q=80')"><span class="zz-num">06</span></div>
+                    <div class="zz-content">
+                        <span class="zz-tag">Service</span>
                         <h3>AI Photography &amp; Videography</h3>
                         <p>Transform ideas into stunning visuals with AI-powered content — without the time and cost of traditional productions.</p>
-                        <ul>
+                        <ul class="zz-list">
                             <li>AI product photos &amp; videos</li>
                             <li>AI lifestyle &amp; marketing visuals</li>
                             <li>AI social media content</li>
@@ -198,12 +231,14 @@
                     </div>
                 </article>
 
-                <article class="service-card reveal" style="--img:url('https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=900&q=80')">
-                    <div class="service-media"></div>
-                    <div class="service-body">
+                <!-- 07 Branding & Marketing — CHANGED image -->
+                <article class="zz-row reveal">
+                    <div class="zz-media" style="--img:url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1000&q=80')"><span class="zz-num">07</span></div>
+                    <div class="zz-content">
+                        <span class="zz-tag">Service</span>
                         <h3>Branding &amp; Marketing</h3>
                         <p>Helping businesses build stronger brands through creative marketing strategies and impactful campaigns.</p>
-                        <ul>
+                        <ul class="zz-list">
                             <li>Brand strategy &amp; identity</li>
                             <li>Marketing &amp; social campaigns</li>
                             <li>Event branding &amp; activations</li>
@@ -211,35 +246,69 @@
                         </ul>
                     </div>
                 </article>
-
-                <article class="service-cta reveal">
-                    <h3>Have something in mind but unsure if we can support it?</h3>
-                    <p>Not every project fits neatly into a category — and that's perfectly okay. Tell us what you're looking for, and we'll work with you to find the right solution.</p>
-                    <a href="https://wa.me/60167296636?text=Hi%20BlumBox%2C%20I'd%20like%20to%20discuss%20a%20project%20idea." class="btn btn-light" target="_blank" rel="noopener">Talk to BlumBox</a>
-                </article>
             </div>
+
+            <article class="service-cta reveal">
+                <h3>Have something in mind but unsure if we can support it?</h3>
+                <p>Not every project fits neatly into a category — and that's perfectly okay. Tell us what you're looking for, and we'll work with you to find the right solution.</p>
+                <a href="https://wa.me/60167653393?text=Hi%20BlumBox%2C%20I'd%20like%20to%20discuss%20a%20project%20idea." class="btn btn-light" target="_blank" rel="noopener">Talk to BlumBox</a>
+            </article>
         </div>
     </section>
 
     <!-- ===================== STORY ===================== -->
     <section class="section story" id="story">
         <div class="story-pattern"></div>
+        <span class="story-orb story-orb-1"></span>
+        <span class="story-orb story-orb-2"></span>
+        <span class="story-watermark" aria-hidden="true">EST. 2021</span>
+
         <div class="container story-inner">
-            <h2 class="story-title reveal">The Story Behind BlumBox</h2>
-            <div class="story-body">
-                <p class="reveal">Every great project begins with an idea, but bringing that idea to life takes more than creativity — it takes people who genuinely care about getting it right.</p>
-                <p class="reveal">At BlumBox, we believe every client deserves more than a service provider. They deserve a team that listens, understands their vision, and is willing to go the extra mile. That's why we approach every project with the same dedication we'd expect if it were our own.</p>
-                <p class="reveal">Whether we're helping build a brand, planning an event, or creating something completely unique, our focus stays the same: work that is thoughtful, purposeful, and leaves a lasting impression. We don't believe in one-size-fits-all, because every business and every story is different.</p>
-                <p class="story-signature reveal">The best ideas deserve a team that's just as invested in them as you are.</p>
+            <div class="story-head reveal">
+                <span class="eyebrow eyebrow-center story-eyebrow">Our Story</span>
+                <h2 class="story-title">The Story Behind BlumBox</h2>
             </div>
-            <div class="reveal">
-                <a href="https://wa.me/60167296636?text=Hi%20BlumBox%2C%20let's%20create%20something%20amazing%20together." class="btn btn-light btn-lg" target="_blank" rel="noopener">Let's Create Something Amazing</a>
+
+            <div class="story-grid">
+                <!-- Left rail: big quote + signature -->
+                <aside class="story-aside reveal">
+                    <span class="story-quote-mark">&ldquo;</span>
+                    <p class="story-signature">The best ideas deserve a team that's just as invested in them as you are.</p>
+                    <div class="story-chips">
+                        <span class="story-chip"><i class="fa-solid fa-heart"></i> Genuine care</span>
+                        <span class="story-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> Purposeful work</span>
+                        <span class="story-chip"><i class="fa-solid fa-people-group"></i> True partnership</span>
+                    </div>
+                </aside>
+
+                <!-- Right: narrative in glass cards -->
+                <div class="story-cards">
+                    <div class="story-card reveal">
+                        <span class="story-card-no">01</span>
+                        <p>Every great project begins with an idea — but bringing that idea to life takes more than creativity. It takes people who genuinely care about getting it right.</p>
+                    </div>
+                    <div class="story-card reveal">
+                        <span class="story-card-no">02</span>
+                        <p>Every client deserves more than a service provider. They deserve a team that listens, understands their vision, and goes the extra mile — approaching every project as if it were our own.</p>
+                    </div>
+                    <div class="story-card reveal">
+                        <span class="story-card-no">03</span>
+                        <p>Whether we're building a brand, planning an event, or creating something entirely new, our focus stays the same: work that is thoughtful, purposeful, and leaves a lasting impression.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-cta reveal">
+                <a href="https://wa.me/60167653393?text=Hi%20BlumBox%2C%20let's%20create%20something%20amazing%20together." class="btn btn-primary btn-lg" target="_blank" rel="noopener">Let's Create Something Amazing</a>
             </div>
         </div>
     </section>
 
     <!-- ===================== QUICK ENQUIRY SYSTEM ===================== -->
     <section class="section enquiry" id="enquiry">
+        <div class="enquiry-bg"></div>
+        <span class="enquiry-blob enquiry-blob-1"></span>
+        <span class="enquiry-blob enquiry-blob-2"></span>
         <div class="container">
             <div class="enquiry-card reveal">
                 <span class="eyebrow eyebrow-center">Book &amp; Enquire</span>
@@ -352,7 +421,7 @@
                     </ul>
 
                     <div class="office-info">
-                        <a class="office-item" href="https://wa.me/60167296636" target="_blank" rel="noopener"><i class="fa-solid fa-phone"></i><span>+60 16-729 6636</span></a>
+                        <a class="office-item" href="https://wa.me/60167653393" target="_blank" rel="noopener"><i class="fa-solid fa-phone"></i><span>+60 16-765 3393</span></a>
                         <a class="office-item" href="mailto:support@blumbox.my"><i class="fa-solid fa-envelope"></i><span>support@blumbox.my</span></a>
                         <div class="office-item"><i class="fa-solid fa-location-dot"></i><span>21-03, Jln Setia Tropika 1/15, Taman Setia Tropika, 81200 Johor Bahru, Malaysia</span></div>
                         <div class="office-item"><i class="fa-solid fa-clock"></i><span>Mon – Fri, 9:00am – 5:00pm</span></div>
@@ -412,7 +481,7 @@
             <div class="footer-contact">
                 <h4>Contact Us</h4>
                 <ul>
-                    <li><i class="fa-solid fa-phone"></i> <a href="https://wa.me/60167296636" target="_blank" rel="noopener">+60 16-729 6636</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="https://wa.me/60167653393" target="_blank" rel="noopener">+60 16-765 3393</a></li>
                     <li><i class="fa-solid fa-envelope"></i> <a href="mailto:support@blumbox.my">support@blumbox.my</a></li>
                     <li><i class="fa-solid fa-location-dot"></i> Setia Tropika, 81200 Johor Bahru, Malaysia</li>
                     <li><i class="fa-solid fa-clock"></i> Mon – Fri, 9am – 5pm</li>
@@ -429,7 +498,7 @@
 
     <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
 
-    <a class="wa-float" href="https://wa.me/60167296636?text=Hi%20BlumBox%2C%20I'd%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <a class="wa-float" href="https://wa.me/60167653393?text=Hi%20BlumBox%2C%20I'd%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 

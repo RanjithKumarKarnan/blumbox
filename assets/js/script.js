@@ -4,13 +4,63 @@
 (function () {
   'use strict';
 
-  var WHATSAPP_NUMBER = '60167296636'; // BlumBox WhatsApp
+  var WHATSAPP_NUMBER = '60167653393'; // BlumBox WhatsApp
 
   document.addEventListener('DOMContentLoaded', function () {
 
     /* ---------- Year in footer ---------- */
     var yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    /* ---------- Preloader ---------- */
+    var preloader = document.getElementById('preloader');
+    if (preloader) {
+      var hidePreloader = function () {
+        preloader.classList.add('loaded');
+        setTimeout(function () { if (preloader && preloader.parentNode) preloader.style.display = 'none'; }, 700);
+      };
+      window.addEventListener('load', function () { setTimeout(hidePreloader, 500); });
+      // Safety fallback in case 'load' already fired / assets are slow
+      setTimeout(hidePreloader, 3500);
+    }
+
+    /* ---------- Custom cursor (inner dot + outer ring) ---------- */
+    var canHover = window.matchMedia && window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+    var cursorInner = document.querySelector('.cursor-inner');
+    var cursorOuter = document.querySelector('.cursor-outer');
+    if (canHover && cursorInner && cursorOuter) {
+      var mx = 0, my = 0, ox = 0, oy = 0;
+      document.addEventListener('mousemove', function (e) {
+        mx = e.clientX; my = e.clientY;
+        cursorInner.style.transform = 'translate(' + (mx - 4) + 'px,' + (my - 4) + 'px)';
+      });
+      // Outer ring follows with easing
+      (function loop() {
+        ox += (mx - ox) * 0.18;
+        oy += (my - oy) * 0.18;
+        cursorOuter.style.transform = 'translate(' + (ox - 18) + 'px,' + (oy - 18) + 'px)';
+        requestAnimationFrame(loop);
+      })();
+      // Grow on interactive elements
+      var hoverTargets = 'a, button, .btn, select, input, textarea, .hamburger, .service-card, .why-card, .story-card, .hero-dots button';
+      document.querySelectorAll(hoverTargets).forEach(function (el) {
+        el.addEventListener('mouseenter', function () {
+          cursorInner.classList.add('cursor-hover');
+          cursorOuter.classList.add('cursor-hover');
+        });
+        el.addEventListener('mouseleave', function () {
+          cursorInner.classList.remove('cursor-hover');
+          cursorOuter.classList.remove('cursor-hover');
+        });
+      });
+      // Hide when leaving the window
+      document.addEventListener('mouseleave', function () {
+        cursorInner.style.opacity = '0'; cursorOuter.style.opacity = '0';
+      });
+      document.addEventListener('mouseenter', function () {
+        cursorInner.style.opacity = '1'; cursorOuter.style.opacity = '';
+      });
+    }
 
     /* ---------- Sticky navbar scroll state ---------- */
     var navbar = document.getElementById('navbar');
