@@ -387,7 +387,7 @@ a.office-item:hover{ color:var(--blue); }
 /* ---------- Footer ---------- */
 .footer{ background:var(--blue-darker); color:rgba(255,255,255,.7); padding-top:70px; }
 .footer-grid{ display:grid; grid-template-columns:2fr 1fr 1.2fr 1.4fr; gap:40px; padding-bottom:50px; }
-.footer-logo{ height:64px; width:auto; background:#fff; padding:8px 12px; border-radius:12px; margin-bottom:20px; }
+.footer-logo{ height:100px; width:auto; background:#fff; padding:8px 12px; border-radius:12px; margin-bottom:20px; }
 .footer-brand p{ font-size:.94rem; max-width:340px; }
 .socials{ display:flex; gap:12px; margin-top:22px; }
 .socials a{
