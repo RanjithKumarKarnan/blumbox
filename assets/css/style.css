@@ -62,6 +62,14 @@ ul{ list-style:none; }
 .section-subtitle{ color:var(--orange); font-weight:600; font-size:1.1rem; margin-top:10px; }
 .section-lead{ color:var(--muted); font-size:1.04rem; margin-top:18px; }
 
+.sub-title{
+    font-size: 18px;
+    color: var(--bg);
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
 /* ---------- Buttons ---------- */
 .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:10px;
