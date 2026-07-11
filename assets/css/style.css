@@ -139,6 +139,7 @@ ul{ list-style:none; }
     font-family:'Playfair Display',serif; font-weight:600;
     font-size:clamp(2.4rem,6.4vw,5rem); line-height:1.07; letter-spacing:-.01em;
     text-shadow:0 4px 30px rgba(0,0,0,.35);
+    margin-bottom: 1rem;
 }
 .hero-title em{ font-style:italic; color:var(--orange); }
 .hero-sub{
